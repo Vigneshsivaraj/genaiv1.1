@@ -1,0 +1,22 @@
+artifact_path: file:D:/Coding-Utils/projects/GenAITraining/genaiv1.1/mlruns/1/models/m-5a6eedd7129a4a78b54e7a0ca2c89d15/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.14.2
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.8.0
+mlflow_version: 3.7.0
+model_id: m-5a6eedd7129a4a78b54e7a0ca2c89d15
+model_size_bytes: 522
+model_uuid: m-5a6eedd7129a4a78b54e7a0ca2c89d15
+prompts: null
+run_id: 8f15df8249a5478cac022727fd9abc3f
+utc_time_created: '2025-12-14 18:06:07.066338'
