@@ -8,7 +8,7 @@ class TestSentiment(unittest.TestCase):
         self.assertEqual(result["sentiment"], "Positive")
 
     def test_negative_sentiment(self):
-        result = sentiment.analyze_sentiment("This is the worst experience")
+        result = sentiment.analyze_sentiment("flood is coming to the city")
         self.assertEqual(result["sentiment"], "Negative")
 
     def test_empty_input(self):

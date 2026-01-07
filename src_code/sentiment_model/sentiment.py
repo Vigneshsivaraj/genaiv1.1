@@ -20,3 +20,12 @@ def analyze_sentiment(text) -> dict :
         "polarity" : polarity,
         "sentiment" : sentiment
     }
+
+def format_output(text) -> dict:
+    response = analyze_sentiment(text)
+    return {
+        "text" : text,
+        "polarity" : round(response["polarity"],2),
+        "sentiment" : response["sentiment"],
+        "confident" : abs(round(response["polarity"],2))
+    }
