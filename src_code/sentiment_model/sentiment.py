@@ -1,6 +1,6 @@
 from textblob import TextBlob
 import json
-from errors.invalid_input_exception import InvalidInputException
+from sentiment_model.errors.invalid_input_exception import InvalidInputException
 
 def analyze_sentiment(text) -> dict :
     if not text or not text.strip():
